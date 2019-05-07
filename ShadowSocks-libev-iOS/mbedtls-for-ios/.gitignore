@@ -1,0 +1,7 @@
+*.tar
+*.gz
+*.tgz
+bin/
+include/
+lib/
+src/

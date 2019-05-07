@@ -1,0 +1,4 @@
+murmur2/libbloom_la-MurmurHash2.lo: murmur2/MurmurHash2.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
