@@ -1,48 +1,35 @@
 # ShadowSocks-libev-iOS
 
-
-This is a CocoaPod, trying to encapsulate all necessary dependencies to compile ShadowShocks-libev for iOS.
-
-## Status
-
-This is not finished worked.
-It is published here, nevertheless for others to find and for me to not forget.
-
-## Roadblocks
-
-The last issue encountered, is similar to what is described here:
-https://github.com/CocoaPods/CocoaPods/issues/5675
-
-The generated Pods project will contain multiple entries for "config.h", which should be different files in different
-directories. Instead all entries point to the same file, which inhibits proper compilation.
-
-Also, for an unknown reason, the libsodium dependency won't compile, even though it does for me, when referenced
-in other projects.
-
-[![CI Status](http://img.shields.io/travis/Benjamin Erhart/ShadowSocks-libev-iOS.svg?style=flat)](https://travis-ci.org/Benjamin Erhart/ShadowSocks-libev-iOS)
-[![Version](https://img.shields.io/cocoapods/v/ShadowSocks-libev-iOS.svg?style=flat)](http://cocoapods.org/pods/ShadowSocks-libev-iOS)
-[![License](https://img.shields.io/cocoapods/l/ShadowSocks-libev-iOS.svg?style=flat)](http://cocoapods.org/pods/ShadowSocks-libev-iOS)
-[![Platform](https://img.shields.io/cocoapods/p/ShadowSocks-libev-iOS.svg?style=flat)](http://cocoapods.org/pods/ShadowSocks-libev-iOS)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+感谢开源社区的大神，脚本都是从github上找的
 
 ## Installation
 
-ShadowSocks-libev-iOS is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+###1. remote mode
+Podfile 
+pod 'ShadowSocks-libev-iOS', git: 'git@github.com:juvham/ShadowSocks-libev-iOS.git'
 
-```ruby
-pod 'ShadowSocks-libev-iOS'
-```
+pod install --verbose
 
+####. local mode
+
+down load this
+
+cp ShadowSocks-libev-iOS/ prepare.sh ShadowSocks-libev-iOS-DEMO.podspec  your-poject-root/
+
+cd your-poject-root/
+mv ShadowSocks-libev-iOS-DEMO.podspec  mv ShadowSocks-libev-iOS.podspec 
+
+Podfile 
+pod 'ShadowSocks-libev-iOS', :path => './'
+
+pod install --verbose
+
+
+参见demo
+
+推荐使用 local mode 虽然稍微麻烦点但是 由于脚本下载经常会失败 remote mode 不稳定
 ## Author
-
-Benjamin Erhart, be@benjaminerhart.com
-
+juvham@foxmial.com
 ## License
 
 The original work in ShadowSocks-libev-iOS is available under the MIT license. See the LICENSE file for more info.

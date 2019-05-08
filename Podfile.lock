@@ -1,45 +1,39 @@
 PODS:
-  - libev-iOS (4.22.0)
-  - ShadowSocks-libev-iOS (3.1.3):
-    - libev-iOS (~> 4.22)
-    - ShadowSocks-libev-iOS/c-ares (= 3.1.3)
-    - ShadowSocks-libev-iOS/libbloom (= 3.1.3)
-    - ShadowSocks-libev-iOS/libcork (= 3.1.3)
-    - ShadowSocks-libev-iOS/libipset (= 3.1.3)
-    - ShadowSocks-libev-iOS/mbedtls (= 3.1.3)
-    - ShadowSocks-libev-iOS/pcre (= 3.1.3)
-    - ShadowSocks-libev-iOS/sodium (= 3.1.3)
-  - ShadowSocks-libev-iOS/c-ares (3.1.3):
-    - libev-iOS (~> 4.22)
-  - ShadowSocks-libev-iOS/libbloom (3.1.3):
-    - libev-iOS (~> 4.22)
-  - ShadowSocks-libev-iOS/libcork (3.1.3):
-    - libev-iOS (~> 4.22)
-  - ShadowSocks-libev-iOS/libipset (3.1.3):
-    - libev-iOS (~> 4.22)
+  - ShadowSocks-libev-iOS (3.2.5):
+    - ShadowSocks-libev-iOS/c-ares (= 3.2.5)
+    - ShadowSocks-libev-iOS/libbloom (= 3.2.5)
+    - ShadowSocks-libev-iOS/libcork (= 3.2.5)
+    - ShadowSocks-libev-iOS/libev (= 3.2.5)
+    - ShadowSocks-libev-iOS/libipset (= 3.2.5)
+    - ShadowSocks-libev-iOS/mbedtls (= 3.2.5)
+    - ShadowSocks-libev-iOS/pcre (= 3.2.5)
+    - ShadowSocks-libev-iOS/sodium (= 3.2.5)
+  - ShadowSocks-libev-iOS/c-ares (3.2.5)
+  - ShadowSocks-libev-iOS/libbloom (3.2.5)
+  - ShadowSocks-libev-iOS/libcork (3.2.5)
+  - ShadowSocks-libev-iOS/libev (3.2.5)
+  - ShadowSocks-libev-iOS/libipset (3.2.5):
     - ShadowSocks-libev-iOS/libcork
-  - ShadowSocks-libev-iOS/mbedtls (3.1.3):
-    - libev-iOS (~> 4.22)
-  - ShadowSocks-libev-iOS/pcre (3.1.3):
-    - libev-iOS (~> 4.22)
-  - ShadowSocks-libev-iOS/sodium (3.1.3):
-    - libev-iOS (~> 4.22)
+  - ShadowSocks-libev-iOS/mbedtls (3.2.5)
+  - ShadowSocks-libev-iOS/pcre (3.2.5)
+  - ShadowSocks-libev-iOS/sodium (3.2.5)
 
 DEPENDENCIES:
-  - ShadowSocks-libev-iOS (from `./`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - libev-iOS
+  - ShadowSocks-libev-iOS (from `https://github.com/juvham/ShadowSocks-libev-iOS.git`, tag `master`)
 
 EXTERNAL SOURCES:
   ShadowSocks-libev-iOS:
-    :path: "./"
+    :git: https://github.com/juvham/ShadowSocks-libev-iOS.git
+    :tag: master
+
+CHECKOUT OPTIONS:
+  ShadowSocks-libev-iOS:
+    :git: https://github.com/juvham/ShadowSocks-libev-iOS.git
+    :tag: master
 
 SPEC CHECKSUMS:
-  libev-iOS: de664bc442ff74afdc0f50d14f682107d59cef6f
-  ShadowSocks-libev-iOS: 94962c6b99591c7b20c8d54b7738d92235fc295a
+  ShadowSocks-libev-iOS: 6a71cdde89752cd491f7bfa7da859ec3509d5b1d
 
-PODFILE CHECKSUM: 34cf55832ea4d66aa2ec9ec5cecb46a9ac084ae8
+PODFILE CHECKSUM: fc394f8a3beec7773e9476caa1abe402407fb40d
 
 COCOAPODS: 1.6.1

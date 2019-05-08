@@ -7,44 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D0AC9D05B5D15DF621EB9A /* Pods_DEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54BE5E84225DA1FB2E3FF0B /* Pods_DEMO.framework */; };
 		8D6BCEB22281A87100F7B463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BCEAA2281A87100F7B463 /* ViewController.swift */; };
 		8D6BCEB32281A87100F7B463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6BCEAB2281A87100F7B463 /* Assets.xcassets */; };
 		8D6BCEB42281A87100F7B463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6BCEAC2281A87100F7B463 /* LaunchScreen.storyboard */; };
 		8D6BCEB52281A87100F7B463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6BCEAE2281A87100F7B463 /* Main.storyboard */; };
 		8D6BCEB62281A87100F7B463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BCEB02281A87100F7B463 /* AppDelegate.swift */; };
-		BE54D3419A4063B192DE8768 /* libPods-DEMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB1D7E82CDE906AADF8ECB8 /* libPods-DEMO.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8D6BCE732281A7D400F7B463 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8D6BCE562281A7D300F7B463 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D6BCE5D2281A7D300F7B463;
-			remoteInfo = DEMO;
-		};
-		8D6BCE7E2281A7D400F7B463 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8D6BCE562281A7D300F7B463 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D6BCE5D2281A7D300F7B463;
-			remoteInfo = DEMO;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03132B399F41DDFAB27688DB /* Pods-DEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DEMO.release.xcconfig"; path = "Target Support Files/Pods-DEMO/Pods-DEMO.release.xcconfig"; sourceTree = "<group>"; };
 		86150432295CB7279380CDF1 /* Pods-DEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DEMO.debug.xcconfig"; path = "Target Support Files/Pods-DEMO/Pods-DEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		8D6BCE5E2281A7D300F7B463 /* DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D6BCE722281A7D400F7B463 /* DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D6BCE7D2281A7D400F7B463 /* DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6BCEAA2281A87100F7B463 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D6BCEAB2281A87100F7B463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6BCEAD2281A87100F7B463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D6BCEAF2281A87100F7B463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D6BCEB02281A87100F7B463 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D6BCEB12281A87100F7B463 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCB1D7E82CDE906AADF8ECB8 /* libPods-DEMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DEMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54BE5E84225DA1FB2E3FF0B /* Pods_DEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE54D3419A4063B192DE8768 /* libPods-DEMO.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D6BCE6F2281A7D400F7B463 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D6BCE7A2281A7D400F7B463 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				52D0AC9D05B5D15DF621EB9A /* Pods_DEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				8D6BCE5E2281A7D300F7B463 /* DEMO.app */,
-				8D6BCE722281A7D400F7B463 /* DEMOTests.xctest */,
-				8D6BCE7D2281A7D400F7B463 /* DEMOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +74,7 @@
 		DC27C1C7BBBEA04845E964EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCB1D7E82CDE906AADF8ECB8 /* libPods-DEMO.a */,
+				E54BE5E84225DA1FB2E3FF0B /* Pods_DEMO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,7 +85,6 @@
 				86150432295CB7279380CDF1 /* Pods-DEMO.debug.xcconfig */,
 				03132B399F41DDFAB27688DB /* Pods-DEMO.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,6 +99,7 @@
 				8D6BCE5A2281A7D300F7B463 /* Sources */,
 				8D6BCE5B2281A7D300F7B463 /* Frameworks */,
 				8D6BCE5C2281A7D300F7B463 /* Resources */,
+				0C36DC7CBB1DF0CA0A853426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,42 +109,6 @@
 			productName = DEMO;
 			productReference = 8D6BCE5E2281A7D300F7B463 /* DEMO.app */;
 			productType = "com.apple.product-type.application";
-		};
-		8D6BCE712281A7D400F7B463 /* DEMOTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8D6BCE892281A7D400F7B463 /* Build configuration list for PBXNativeTarget "DEMOTests" */;
-			buildPhases = (
-				8D6BCE6E2281A7D400F7B463 /* Sources */,
-				8D6BCE6F2281A7D400F7B463 /* Frameworks */,
-				8D6BCE702281A7D400F7B463 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D6BCE742281A7D400F7B463 /* PBXTargetDependency */,
-			);
-			name = DEMOTests;
-			productName = DEMOTests;
-			productReference = 8D6BCE722281A7D400F7B463 /* DEMOTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8D6BCE7C2281A7D400F7B463 /* DEMOUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8D6BCE8C2281A7D400F7B463 /* Build configuration list for PBXNativeTarget "DEMOUITests" */;
-			buildPhases = (
-				8D6BCE792281A7D400F7B463 /* Sources */,
-				8D6BCE7A2281A7D400F7B463 /* Frameworks */,
-				8D6BCE7B2281A7D400F7B463 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D6BCE7F2281A7D400F7B463 /* PBXTargetDependency */,
-			);
-			name = DEMOUITests;
-			productName = DEMOUITests;
-			productReference = 8D6BCE7D2281A7D400F7B463 /* DEMOUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,14 +122,6 @@
 				TargetAttributes = {
 					8D6BCE5D2281A7D300F7B463 = {
 						CreatedOnToolsVersion = 10.2.1;
-					};
-					8D6BCE712281A7D400F7B463 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 8D6BCE5D2281A7D300F7B463;
-					};
-					8D6BCE7C2281A7D400F7B463 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 8D6BCE5D2281A7D300F7B463;
 					};
 				};
 			};
@@ -218,8 +139,6 @@
 			projectRoot = "";
 			targets = (
 				8D6BCE5D2281A7D300F7B463 /* DEMO */,
-				8D6BCE712281A7D400F7B463 /* DEMOTests */,
-				8D6BCE7C2281A7D400F7B463 /* DEMOUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,23 +154,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D6BCE702281A7D400F7B463 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D6BCE7B2281A7D400F7B463 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C36DC7CBB1DF0CA0A853426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DEMO/Pods-DEMO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ShadowSocks-libev-iOS/ShadowSocks_libev_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShadowSocks_libev_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DEMO/Pods-DEMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CACC32399BBFC86E6134F6F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,34 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D6BCE6E2281A7D400F7B463 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D6BCE792281A7D400F7B463 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8D6BCE742281A7D400F7B463 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D6BCE5D2281A7D300F7B463 /* DEMO */;
-			targetProxy = 8D6BCE732281A7D400F7B463 /* PBXContainerItemProxy */;
-		};
-		8D6BCE7F2281A7D400F7B463 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D6BCE5D2281A7D300F7B463 /* DEMO */;
-			targetProxy = 8D6BCE7E2281A7D400F7B463 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D6BCEAC2281A87100F7B463 /* LaunchScreen.storyboard */ = {
@@ -487,84 +387,6 @@
 			};
 			name = Release;
 		};
-		8D6BCE8A2281A7D400F7B463 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DEMOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juvham.DEMOTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEMO.app/DEMO";
-			};
-			name = Debug;
-		};
-		8D6BCE8B2281A7D400F7B463 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DEMOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juvham.DEMOTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEMO.app/DEMO";
-			};
-			name = Release;
-		};
-		8D6BCE8D2281A7D400F7B463 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DEMOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juvham.DEMOUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DEMO;
-			};
-			name = Debug;
-		};
-		8D6BCE8E2281A7D400F7B463 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DEMOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juvham.DEMOUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DEMO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,24 +404,6 @@
 			buildConfigurations = (
 				8D6BCE872281A7D400F7B463 /* Debug */,
 				8D6BCE882281A7D400F7B463 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8D6BCE892281A7D400F7B463 /* Build configuration list for PBXNativeTarget "DEMOTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8D6BCE8A2281A7D400F7B463 /* Debug */,
-				8D6BCE8B2281A7D400F7B463 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8D6BCE8C2281A7D400F7B463 /* Build configuration list for PBXNativeTarget "DEMOUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8D6BCE8D2281A7D400F7B463 /* Debug */,
-				8D6BCE8E2281A7D400F7B463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

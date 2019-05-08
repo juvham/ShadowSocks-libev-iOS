@@ -6,6 +6,8 @@ PACKAGE="shadowsocks-libev"
 # get absolute path to this script
 ROOT=$(cd `dirname $0` && pwd)
 
+echo "start prepare at ${ROOT}"
+
 # Target path, where the files should live
 TARGET="$ROOT/ShadowSocks-libev-iOS/shadowsocks-libev"
 
@@ -138,3 +140,10 @@ if [ ! -e $LIBSODIUM ]; then
     sh build-sodium.sh
 fi
 
+EVROOT="$ROOT/ShadowSocks-libev-iOS/libev-ios"
+LIBEV="$EVROOT/lib/libev.a"
+
+if [ ! -e $LIBEV ]; then
+    cd $EVROOT
+    sh build-libev-ios.sh
+fi
