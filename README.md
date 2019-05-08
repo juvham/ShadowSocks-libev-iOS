@@ -4,20 +4,21 @@
 
 ## Installation
 
-###1. remote mode
+##1. remote mode
+
 Podfile 
 pod 'ShadowSocks-libev-iOS', git: 'git@github.com:juvham/ShadowSocks-libev-iOS.git'
 
 pod install --verbose
 
-####. local mode
+##2. local mode
 
 down load this
 
-cp ShadowSocks-libev-iOS/ prepare.sh ShadowSocks-libev-iOS-DEMO.podspec  your-poject-root/
+cp ShadowSocks-libev-iOS/ prepare.sh ShadowSocks-libev-iOS-DEMO.podspec.bak  your-poject-root/
 
 cd your-poject-root/
-mv ShadowSocks-libev-iOS-DEMO.podspec  mv ShadowSocks-libev-iOS.podspec 
+mv ShadowSocks-libev-iOS-DEMO.podspec.bak  mv ShadowSocks-libev-iOS.podspec 
 
 Podfile 
 pod 'ShadowSocks-libev-iOS', :path => './'
