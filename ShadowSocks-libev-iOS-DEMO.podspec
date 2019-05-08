@@ -122,7 +122,7 @@ This pod wraps ShadowSocks-libev and contains all necessary dependencies to comp
     ipset.preserve_paths = 'ShadowSocks-libev-iOS/shadowsocks-libev/libipset/include/**/*.h',
     'ShadowSocks-libev-iOS/shadowsocks-libev/libipset/src/**/*.in'
     ipset.dependency 'ShadowSocks-libev-iOS/libcork'
-    ipset.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/ShadowSocks-libev-iOS/shadowsocks-libev/libipset/include ${PODS_ROOT}/#{s.name}/ShadowSocks-libev-iOS/shadowsocks-libev/libipset/src" }
+    ipset.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../ShadowSocks-libev-iOS/shadowsocks-libev/libipset/include ${PODS_ROOT}/../ShadowSocks-libev-iOS/shadowsocks-libev/libipset/src" }
   end
 
   s.subspec 'c-ares' do |cares|
