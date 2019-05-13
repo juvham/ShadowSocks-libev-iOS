@@ -86,9 +86,9 @@ if [ ! -e $TARGET ]; then
     -e "$a #define TCP_NODELAY 0x01" > ./config.h
 
     echo "start http.h"
-    cat ./http.h | sed -e "s/const protocol_t *const http_protocol;/extern const protocol_t *const http_protocol;/" > ./http.h
+    cat ./http.h | sed -e "s/const protocol_t *const http_protocol;/extern const protocol_t *const http_protocol;/" | tee ./http.h >> /dev/null
     echo "start tls.h"
-    cat ./tls.h | sed -e "s/const protocol_t *const tls_protocol;/extern const protocol_t *const tls_protocol;/" > ./tls.h
+    cat ./tls.h | sed -e "s/const protocol_t *const tls_protocol;/extern const protocol_t *const tls_protocol;/" | tee ./tls.h >> /dev/null
 
 
     echo "success "
