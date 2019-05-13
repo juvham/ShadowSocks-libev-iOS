@@ -66,6 +66,7 @@ This pod wraps ShadowSocks-libev and contains all necessary dependencies to comp
     'ShadowSocks-libev-iOS/shadowsocks-libev/src/uthash.h',
     'ShadowSocks-libev-iOS/shadowsocks-libev/src/utils.{c,h}',
     'ShadowSocks-libev-iOS/shadowsocks-libev/src/http.{c,h}',
+    'ShadowSocks-libev-iOS/shadowsocks-libev/src/http.{c,h}',
     'ShadowSocks-libev-iOS/shadowsocks-libev/config.h'
 
     s.public_header_files = 'ShadowSocks-libev-iOS/shadowsocks-libev/src/shadowsocks.h',
