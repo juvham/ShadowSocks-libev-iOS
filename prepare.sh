@@ -85,11 +85,11 @@ if [ ! -e $TARGET ]; then
     -e "s/^#undef restrict/#define restrict __restrict/"\
     -e "$a #define TCP_NODELAY 0x01" > ./config.h
 
+    cd $TARGET
     echo "start http.h"
-    cat ./src/http.h | sed  "s/const protocol_t \*const http_protocol;/extern const protocol_t \*const http_protocol;/" | tee ./src/http.h >> /dev/null 
+    cat ./src/http.h | sed  "s/^const protocol_t \*const http_protocol;/extern const protocol_t \*const http_protocol;/" | tee ./src/http.h >> /dev/null 
     echo "start tls.h"
-    cat ./src/tls.h | sed "s/const protocol_t \*const tls_protocol;/extern const protocol_t \*const tls_protocol;/" | tee ./src/tls.h >> /dev/null
-
+    cat ./src/tls.h | sed "s/^const protocol_t \*const tls_protocol;/extern const protocol_t \*const tls_protocol;/" | tee ./src/tls.h >> /dev/null
 
     echo "success "
     cd $TARGET
@@ -119,6 +119,12 @@ if [ ! -e $TARGET ]; then
     ;
     }" | tee ./libcork/src/libcork/posix/env.c > /dev/null
 fi
+    # cd $TARGET
+    # echo "start http.h"
+    # cat ./src/http.h | sed  "s/const protocol_t \*const http_protocol;/extern const protocol_t \*const http_protocol;/" | tee ./src/http.h >> /dev/null 
+    # echo "start tls.h"
+    # cat ./src/tls.h | sed "s/const protocol_t \*const tls_protocol;/extern const protocol_t \*const tls_protocol;/" | tee ./src/tls.h >> /dev/null
+
 
 
 CARESROOT="$ROOT/ShadowSocks-libev-iOS/c-ares"
