@@ -86,9 +86,9 @@ if [ ! -e $TARGET ]; then
     -e "$a #define TCP_NODELAY 0x01" > ./config.h
 
     echo "start http.h"
-    cat ./http.h | sed -e "s/const protocol_t *const http_protocol;/extern const protocol_t *const http_protocol;/" | tee ./http.h >> /dev/null
+    cat ./src/http.h | sed  "s/const protocol_t \*const http_protocol;/extern const protocol_t \*const http_protocol;/" | tee ./src/http.h >> /dev/null 
     echo "start tls.h"
-    cat ./tls.h | sed -e "s/const protocol_t *const tls_protocol;/extern const protocol_t *const tls_protocol;/" | tee ./tls.h >> /dev/null
+    cat ./src/tls.h | sed "s/const protocol_t \*const tls_protocol;/extern const protocol_t \*const tls_protocol;/" | tee ./src/tls.h >> /dev/null
 
 
     echo "success "
@@ -119,7 +119,6 @@ if [ ! -e $TARGET ]; then
     ;
     }" | tee ./libcork/src/libcork/posix/env.c > /dev/null
 fi
-
 
 
 CARESROOT="$ROOT/ShadowSocks-libev-iOS/c-ares"
