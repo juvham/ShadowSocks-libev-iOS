@@ -85,6 +85,12 @@ if [ ! -e $TARGET ]; then
     -e "s/^#undef restrict/#define restrict __restrict/"\
     -e "$a #define TCP_NODELAY 0x01" > ./config.h
 
+    echo "start http.h"
+    cat ./http.h | sed -e "s/const protocol_t *const http_protocol;/extern const protocol_t *const http_protocol;/" > ./http.h
+    echo "start tls.h"
+    cat ./tls.h | sed -e "s/const protocol_t *const tls_protocol;/extern const protocol_t *const tls_protocol;/" > ./tls.h
+
+
     echo "success "
     cd $TARGET
     cat "./libcork/src/libcork/posix/env.c" | \
